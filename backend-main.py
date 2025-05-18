@@ -54,7 +54,7 @@ cached_pesticides = []
 @app.on_event("startup")
 def fetch_pesticides_csv():
     global cached_pesticides
-    url = "https://raw.githubusercontent.com/ShaneCurran94/PesticidesApp/b0256ce028368b627666aa82007720e2e325637e/active_substances.csv"
+    url = "https://raw.githubusercontent.com/ShaneCurran94/pesticides-backend/refs/heads/main/active_substances.csv"
     try:
         response = requests.get(url)
         response.raise_for_status()
